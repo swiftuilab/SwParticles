@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.0] - 2026-05-11
 
+### Fixed
+
+- Raised CocoaPods and Swift Package Manager minimum iOS to **15.0** so the library matches SwiftUI `GraphicsContext` availability (was incorrectly declared as 13.0).
+
 ### Added
 
 - Initial release of SwParticles as an open-source iOS library.

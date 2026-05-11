@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/swiftuilab/SwParticles.git', :tag => s.version.to_s }
 
   s.swift_versions   = ['5.0', '5.9']
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '15.0'
 
   s.source_files = 'Sources/SwParticles/**/*.swift'
 

@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/swiftuilab/SwParticles/actions/workflows/ci.yml/badge.svg)](https://github.com/swiftuilab/SwParticles/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-iOS%2013%2B-lightgrey.svg)](SwParticles.podspec)
+[![Platform](https://img.shields.io/badge/platform-iOS%2015%2B-lightgrey.svg)](SwParticles.podspec)
 [![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)](https://swift.org)
 
 SwParticles is a **2D particle system engine** for Swift. It is inspired by the architecture of [Proton](https://github.com/drawcall/Proton/) (JavaScript) and targets **iOS** applications that use **SwiftUI** for rendering.
@@ -22,7 +22,7 @@ The library separates simulation (particles, emitters, behaviours, zones) from d
 
 | Item        | Version |
 |------------|---------|
-| iOS        | 13.0+   |
+| iOS        | 15.0+   |
 | Swift      | 5.0+    |
 | Xcode      | 14+ recommended |
 
@@ -35,7 +35,7 @@ UIKit and SwiftUI are used by parts of the public API (for example colour and im
 Add SwParticles to your `Podfile`:
 
 ```ruby
-platform :ios, '13.0'
+platform :ios, '15.0'
 
 target 'YourApp' do
   use_frameworks!
