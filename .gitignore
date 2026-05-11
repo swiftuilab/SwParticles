@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*.swiftpm
+.build/
+Packages/
+xcuserdata/
+DerivedData/
+*.xccheckout
+*.xcscmblueprint
+Pods/
+*.podspec.lock
