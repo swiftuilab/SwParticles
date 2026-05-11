@@ -12,25 +12,7 @@ let package = Package(
     targets: [
         .target(
             name: "SwParticles",
-            path: ".",
-            exclude: [
-                "LICENSE",
-                "README.md",
-                "SwParticles.podspec",
-                ".gitignore"
-            ],
-            sources: [
-                "Behaviour",
-                "Core",
-                "Emitter",
-                "Events",
-                "Initialize",
-                "Math",
-                "Render",
-                "Utils",
-                "Zone",
-                "SwParticlesExports.swift"
-            ]
+            path: "Sources/SwParticles"
         )
     ]
 )
