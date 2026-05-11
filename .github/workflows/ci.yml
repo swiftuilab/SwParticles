@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  podspec:
+    name: Podspec lint
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install CocoaPods
+        run: gem install cocoapods --no-document
+      - name: Lint podspec
+        run: pod lib lint SwParticles.podspec --quick --allow-warnings
+
+  swift-package:
+    name: SPM manifest
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve package graph
+        run: swift package resolve

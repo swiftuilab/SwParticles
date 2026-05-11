@@ -1,5 +1,6 @@
 # SwParticles
 
+[![CI](https://github.com/swiftuilab/SwParticles/actions/workflows/ci.yml/badge.svg)](https://github.com/swiftuilab/SwParticles/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-iOS%2013%2B-lightgrey.svg)](SwParticles.podspec)
 [![Swift](https://img.shields.io/badge/Swift-5.0%2B-orange.svg)](https://swift.org)
@@ -82,10 +83,20 @@ This repository follows a common layout that works with **both CocoaPods and SPM
 
 ```text
 SwParticles/
+├── .editorconfig
+├── .gitattributes
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── Package.swift                 # Swift Package Manager manifest
 ├── README.md
+├── SECURITY.md
 ├── SwParticles.podspec           # CocoaPods specification
+├── .github/
+│   ├── workflows/ci.yml          # GitHub Actions (pod lint + SPM resolve)
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 └── Sources/
     └── SwParticles/              # Library source (single module)
         ├── Behaviour/
@@ -117,11 +128,18 @@ Refer to types listed in `Sources/SwParticles/SwParticlesExports.swift` for a mo
 
 ## Contributing
 
-Issues and pull requests are welcome. Please keep changes focused, match existing Swift style in the tree, and update the podspec version together with git tags when releasing.
+See **[CONTRIBUTING.md](CONTRIBUTING.md)** for workflow and expectations. By participating, you agree to the **[Code of Conduct](CODE_OF_CONDUCT.md)**.
+
+Other policies:
+
+- **[CHANGELOG.md](CHANGELOG.md)** — release history ([Keep a Changelog](https://keepachangelog.com/))
+- **[SECURITY.md](SECURITY.md)** — how to report vulnerabilities responsibly
+
+Pull requests should stay focused; align with existing Swift style under `Sources/SwParticles/`.
 
 ## Releasing (maintainers)
 
-1. Bump `s.version` in `SwParticles.podspec` and document changes if you keep a changelog.
+1. Bump `s.version` in `SwParticles.podspec` and record changes in `CHANGELOG.md`.
 2. Tag the release: `git tag 0.1.0 && git push origin 0.1.0` (tag must match the podspec version).
 3. Publish to CocoaPods trunk: `pod trunk push SwParticles.podspec` (after [registering](https://guides.cocoapods.org/making/getting-setup-with-trunk.html) if needed).
 
